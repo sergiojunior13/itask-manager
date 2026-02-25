@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>iTask Manager</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>iTask Manager</h1>
+        </header>
+
+        <main>
+            <div id="create-task-div">
+                <label for="title-input">Título</label>
+                <input type="text" name="title" id="title-input" placeholder="Insira aqui o título..." />
+
+                <label for="description-input">Descrição</label>
+                <textarea
+                    name="description"
+                    id="description-input"
+                    placeholder="Insira aqui a descrição da tarefa..."
+                ></textarea>
+
+                <button id="create-task-btn">Criar tarefa</button>
+            </div>
+
+            <div id="tasks-div">
+                <ul id="tasks-list"></ul>
+            </div>
+        </main>
+
+        <footer>
+            <span>Sérgio Júnior - 2026</span>
+        </footer>
+    </body>
+</html>
