@@ -46,6 +46,12 @@ class TaskManager {
     }
 
     addTask(title: string, description: string) {
+        // Verificação dos dados
+        if (title.length < 3) {
+            alert("Insira um título com pelo menos 3 caracteres!");
+            return;
+        }
+
         const task = new Task(title, description);
         this.tasks.push(task);
 
