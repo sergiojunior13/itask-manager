@@ -76,9 +76,12 @@ class Task {
 
     getHTML() {
         return `<li data-id="${this.id}">
-            <span>${this.creationDate.toLocaleString()}</span>
-            <h3>${this.title}</h3>
-            <p>${this.description}</p>
+            <div>
+                <span>${this.creationDate.toLocaleString()}</span>
+                <h3>${this.title}</h3>
+                <p>${this.description}</p>
+            </div>
+        
             <input type="checkbox" />
         </li>
     `;
